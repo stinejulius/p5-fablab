@@ -160,6 +160,12 @@ p.small {
 
     border-bottom: 2px solid var(--color-dark-blue);
     background: var(--header-bg-color);
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .header-icons {
