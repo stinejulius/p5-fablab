@@ -142,6 +142,11 @@ p {
     font-style: italic;
 }
 
+/*modifier - bold italic */
+.bold-italic{
+    font-weight: bold;
+    font-style: italic;
+}
 
 /* p text - small body text */
 p.small {
