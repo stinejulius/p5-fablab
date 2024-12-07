@@ -151,7 +151,22 @@ p.small {
 
 
 /* =============== Header | mobile =============== */
+#header-mobile {
+    display: flex;
+    height: 60px;
+    padding: 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
 
+    border-bottom: 2px solid var(--color-dark-blue);
+    background: var(--header-bg-color);
+}
+
+.header-icons {
+    height: 45px;
+    width: 45px;
+}
 
 
 /* =============== Header | desktop =============== */
