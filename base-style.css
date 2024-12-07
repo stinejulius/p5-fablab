@@ -1,0 +1,198 @@
+/* This is the base CSS document */
+
+
+/* =============== Color Root =============== */
+
+:root {
+    /* ======= our colors ======= */
+    --color-white: #F9F9F9;
+    /*var(--color-white)*/
+
+    --color-light-blue: #83D2FF;
+    /*var(--color-light-blue)*/
+
+    --color-baby-blue: #C7E9FC;
+    /*var(--color-baby-blue)*/
+
+    --color-dark-blue: #192442;
+    /*var(--color-dark-blue)*/
+
+    --color-green: #7CEEC5;
+    /*var(--color-green)*/
+
+    --color-coral-red: #FF7878;
+    /*var(--color-coral-red)*/
+
+    --color-light-coral-red: #FF9494;
+    /*var(--color-light-coral-red)*/
+
+
+    /* ======= primary color ======= */
+    --color-primary: var(--color-light-blue);
+    /*var(--color-primary)*/
+
+
+    /* ======= specific colors ======= */
+    --header-bg-color: var(--color-light-blue);
+    /*var(--header-bg-color)*/
+
+    --page-bg-color: var(--color-white);
+    /*var(--page-bg-color)*/
+
+    --footer-bg-color: var(--color-light-blue);
+    /*var(--footer-bg-color)*/
+
+    --text-color-light: var(--color-white);
+    /*var(--text-color-light)*/
+
+    --text-color-dark: var(--color-dark-blue);
+    /*var(--text-color-dark)*/
+}
+
+
+/* =============== Body =============== */
+
+body {
+    margin: 0px;
+    background-color: var(--page-bg-color);
+}
+
+
+/* =============== Typography | mobile =============== */
+
+/* H1 text - banner title */
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-color-dark);
+    line-height: 150%;
+    /* 31.5px */
+    margin: 0px;
+}
+
+
+/* H2 text - headline */
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-color-light);
+    line-height: 150%;
+    /* 31.5px */
+    margin: 0px;
+}
+
+
+/* H3 text - subheading */
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-color-light);
+    line-height: 150%;
+    /* 27px */
+    margin: 0px;
+}
+
+/* H4 text - button */
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-color-dark);
+    line-height: normal;
+    margin: 0px;
+}
+
+
+/* p text - body text */
+p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color-light);
+    line-height: 150%;
+    margin: 0px;
+}
+
+/* modifier - dark text */
+.dark-text {
+    color: var(--text-color-dark);
+}
+
+/* modifier - light text */
+.light-text {
+    color: var(--text-color-light);
+}
+
+/* modifier - bold */
+.bold {
+    font-weight: 700;
+}
+
+
+/* modifier - italic */
+.italic {
+    font-style: italic;
+}
+
+
+/* p text - small body text */
+p.small {
+    font-size: 14px;
+    color: #6E7485;
+}
+
+
+/* =============== Header | mobile =============== */
+
+
+
+/* =============== Header | desktop =============== */
+
+
+
+/* =============== CTA button =============== */
+.cta-button {
+    /* Neutralizes the default styles on the semantic tag 'button' */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none;
+
+    /* Button style */
+    display: flex;
+    max-width: 124px;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 5px;
+    background: #FF7878;
+}
+
+
+/* =============== Footer | mobile =============== */
+
+
+
+/* =============== Footer | desktop =============== */
+
+
+
+/* ========================================================================================== */
+
+/* =============== Media Query =============== */
+@media only screen and (min-width: 901px) {}
