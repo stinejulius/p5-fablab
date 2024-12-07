@@ -1,6 +1,6 @@
 /* This is the index CSS document */
 
-/* =============== Section: header =============== */
+/* =============== Section: Video banner =============== */
 
 
 
@@ -14,6 +14,65 @@
 
 /* =============== Section: kurser =============== */
 
+#kurser {
+    display: flex;
+    padding: 30px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background: var(--color-coral-red);
+}
+
+#kurser-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#badge-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#kurser-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.kursus-box {
+    position: relative;
+    width: 100%;
+}
+
+.kursus-box-image {
+    width: 100%;
+}
+
+.kursus-box-text {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 5px;
+    background: #83D2FF;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 250px;
+}
 
 
 /* =============== Section: ansatte =============== */
