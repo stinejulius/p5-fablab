@@ -159,33 +159,33 @@
 
 /* =============== Section: maskiner =============== */
 
-.maskiner{
+.maskiner {
     display: flex;
-padding: 30px 16px;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 55px;
-align-self: stretch;
-background-color: var(--header-bg-color);
+    padding: 30px 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    align-self: stretch;
+    background-color: var(--header-bg-color);
 }
 
-.maskine-box{
+.maskine-box {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 20px;
-align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
 }
 
-.maskine-laserskærer{
+.maskine-laserskærer {
     width: 358px;
-height: 250px;
+    height: 250px;
 }
 
-.maskine-3d{
+.maskine-3d {
     width: 358px;
-height: 250px;
+    height: 250px;
 }
 
 
@@ -197,8 +197,28 @@ height: 250px;
 /* =============== Section: ansatte =============== */
 
 
-
 /* =============== Section: praktisk information =============== */
+
+.praktisk-info {
+    display: flex;
+    padding: 30px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-self: stretch;
+    background-color: var(--color-dark-blue);
+}
+
+.praktisk-info-box {
+    display: flex;
+    height: 44px;
+    padding: 10px 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 5px;
+    background: var(--color-green);
+}
 
 
 
