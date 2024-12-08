@@ -23,7 +23,7 @@
     display: inline-flex;
     padding: 10px 16px;
 
-    background: #7CEEC5;
+    background: var(--color-green);
     border-radius: 0px 5px 5px 0px;
 
     position: absolute;
@@ -91,7 +91,7 @@
     gap: 10px;
 
     border-radius: 5px;
-    background: #83D2FF;
+    background: var(--color-light-blue);
 
     position: absolute;
     top: 50%;
@@ -104,6 +104,54 @@
 
 /* =============== Section: ansatte =============== */
 
+#ansatte {
+    display: flex;
+    padding: 30px 16px;
+    flex-direction: column;
+    gap: 30px;
+
+    background: var(--color-light-blue);
+}
+
+#ansatte-kontaktpersoner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.kontaktperson-box-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.kontaktperson-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.kontaktperson-box-img {
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-dark-blue);
+
+    display: flex;
+    justify-content: center;
+}
+
+.kontaktperson-box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.kontaktperson-box-text-inner {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* =============== Section: praktisk information =============== */
