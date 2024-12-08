@@ -40,14 +40,14 @@
     flex-direction: column;
     align-items: center;
     gap: 65px;
-    align-self: stretch;
 }
 
 .hvad-er-fablab {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-self: stretch;
+    max-width: 500px;
+    width: 100%;
 }
 
 .hvad-er-fablab-inner {
@@ -72,7 +72,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
-    align-self: stretch;
+    max-width: 500px;
 }
 
 .fablab-drop-down-mobile {
@@ -91,21 +91,23 @@
 .field-input-text-box {
     display: flex;
     height: 40px;
-    padding: 10px;
     align-items: center;
     flex: 1 0 0;
     border-radius: 5px 0px 0px 0px;
     background: #F9F9F9;
 }
 
+.field-input-text-box>p {
+    padding-left: 16px;
+}
+
 .arrow-button-box {
     display: flex;
     width: 40px;
-    height: 50px;
-    padding: 6px 8px;
+    height: 40px;
     justify-content: center;
     align-items: center;
-    border-radius: 0px 0px 5px 0px;
+    border-radius: 0px 5px 0px 0px;
     background: #FF7878;
 }
 
@@ -138,10 +140,9 @@
 }
 
 .field-business-mobile {
-    width: 371px;
-    height: 247px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
 .business-ideas {
@@ -191,10 +192,12 @@
     padding: 30px 16px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 55px;
-    align-self: stretch;
     background-color: var(--header-bg-color);
+}
+
+.maskiner>p {
+    max-width: 500px;
 }
 
 .maskine-box {
@@ -202,17 +205,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    align-self: stretch;
+    max-width: 500px;
 }
 
-.maskine-laserskærer {
-    width: 358px;
-    height: 250px;
-}
-
-.maskine-3d {
-    width: 358px;
-    height: 250px;
+.maskine-img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -223,7 +221,6 @@
     display: flex;
     padding: 30px 16px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 30px;
 
@@ -235,6 +232,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    max-width: 500px;
 }
 
 #badge-text {
@@ -242,19 +240,21 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    max-width: 500px;
 }
 
 #kurser-boxes {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 30px;
     width: 100%;
+    align-items: center;
 }
 
 .kursus-box {
     position: relative;
     width: 100%;
+    max-width: 500px;
 }
 
 .kursus-box-image {
@@ -334,13 +334,18 @@
 /* =============== Section: praktisk information =============== */
 
 .praktisk-info {
+    background-color: var(--color-dark-blue);
+
+    display: flex;
+    justify-content: center;
+}
+
+#praktisk-info-inner {
     display: flex;
     padding: 30px 16px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 25px;
-    align-self: stretch;
-    background-color: var(--color-dark-blue);
+    max-width: 500px;
 }
 
 .praktisk-info-box {
