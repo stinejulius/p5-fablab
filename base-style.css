@@ -171,6 +171,7 @@ p.small {
     left: 0px;
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .header-icons {
