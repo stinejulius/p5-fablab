@@ -15,34 +15,18 @@
 </head>
 
 <body>
-    <section style="padding-top: 80px;">
-        <!-- Det her er bare til at man kan se de forskellige styles fra base-css -->
-        <h1> h1: banner title example: Velkommen til FabLab </h1>
-        <h2> h2: headline-light: I FabLab kan du mere end du tror </h2>
-        <h2 class="dark-text"> h2 (dark): headline-dark: Maskinerne </h3>
-            <h3> h3: subheading: Hvad er FabLab? </h4>
-                <h3 class="dark-text"> h3 (dark-text): subheading: Laserskærer </h5>
-                    <p> p: Vi vil i samarbejde med dig, kunne hjælpe med at omsætte ideer til prototyper fra start til
-                        slut i
-                        processen. </p>
-                    <p class="dark-text"> p: (dark) I FabLab tilbyder vi et udvalg af kurser, for at give dig flere
-                        stærke
-                        kompetencer. </p>
-                    <p class="dark-text bold"> p (dark text bold): hello </p>
-                    <p class="small"> p (small): mini tekst til billed beskrivelse </p>
-                    <a class="cta-button" href="">
-                        <h4> knap</h4>
-                    </a>
-    </section>
-
+    <!-- Header -->
     <header id="header-mobile">
         <img class="header-icons" src="assets/illustrations/mobile/mini-fablab-logo.svg" alt="FabLab logo">
         <img class="header-icons" src="assets/illustrations/mobile/menu-icon.svg" alt="Menu ikon">
     </header>
 
     <!-- Video Banner -->
-    <section>
-
+    <section id="banner">
+        <video id="banner-video" autoplay loop>
+            <source src="assets/videos/fablab-video-banner.webm" type="video/webm">
+            Din browser understøtter ikke videoen.
+        </video>
         <div id="banner-headline">
             <h1> Velkommen til FabLab </h1>
         </div>
@@ -89,21 +73,24 @@
             </div>
 
             <div class="kursus-box">
-                <img class="kursus-box-image" src="assets/images/mobile/kursus-laserskærer.webp" alt="FabLabs laserskærer">
+                <img class="kursus-box-image" src="assets/images/mobile/kursus-laserskærer.webp"
+                    alt="FabLabs laserskærer">
                 <div class="kursus-box-text">
                     <h4> Laserskærer </h4>
                 </div>
             </div>
 
             <div class="kursus-box">
-                <img class="kursus-box-image" src="assets/images/mobile/kursus-3d.webp" alt="En af FabLabs mange 3D printere">
+                <img class="kursus-box-image" src="assets/images/mobile/kursus-3d.webp"
+                    alt="En af FabLabs mange 3D printere">
                 <div class="kursus-box-text">
                     <h4> 3D-Print </h4>
                 </div>
             </div>
 
             <div class="kursus-box">
-                <img class="kursus-box-image" src="assets/images/mobile/kursus-t-shirt.webp" alt="FabLabs t-shirt print">
+                <img class="kursus-box-image" src="assets/images/mobile/kursus-t-shirt.webp"
+                    alt="FabLabs t-shirt print">
                 <div class="kursus-box-text">
                     <h4> T-shirt Print </h4>
                 </div>
