@@ -142,29 +142,6 @@
     justify-content: center;
 }
 
-.cta-button-kontakt {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    text-decoration: none;
-
-    /* Button style */
-    display: flex;
-    max-width: 124px;
-    width: 100%;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 5px;
-    border: 1px solid #192442;
-    border-radius: 5px;
-    background: var(--color-white);
-}
 
 /* Desktop */
 
@@ -367,11 +344,6 @@
 
 /* =============== Media Query =============== */
 @media only screen and (min-width: 901px) {
-
-    /* =============== CTA button kontakt =============== */
-    .cta-button-kontakt {
-        padding: 5px 24px;
-    }
 
     /* =============== Section: Video banner =============== */
     #banner {
