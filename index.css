@@ -47,30 +47,24 @@
     flex-direction: column;
     gap: 30px;
     max-width: 500px;
-    width: 100%;
 }
 
 .hvad-er-fablab-inner {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
     gap: 60px;
-    align-self: stretch;
 }
 
 .hvad-er-fablab-inner-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-    align-self: stretch;
 }
 
 .fablab-for-dig {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 30px;
     max-width: 500px;
 }
@@ -78,14 +72,10 @@
 .fablab-drop-down-mobile {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
 }
 
 .field-input-picker {
     display: flex;
-    align-items: center;
-    align-self: stretch;
 }
 
 .field-input-text-box {
@@ -115,9 +105,7 @@
     display: flex;
     padding: 16px;
     flex-direction: column;
-    align-items: center;
     gap: 50px;
-    align-self: stretch;
     border-radius: 0px 0px 5px 5px;
     background: #C7E9FC;
 }
@@ -125,18 +113,13 @@
 .business-intro {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-    align-self: stretch;
 }
 
 .business-image-and-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-    align-self: stretch;
-    overflow: hidden;
 }
 
 .field-business-mobile {
@@ -148,17 +131,13 @@
 .business-ideas {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-    align-self: stretch;
 }
 
 .business-cta {
     display: flex;
-    padding: 0px 31px;
-    align-items: center;
     gap: 16px;
-    align-self: stretch;
+    justify-content: center;
 }
 
 .cta-button-kontakt {
@@ -187,23 +166,26 @@
 
 /* =============== Section: maskiner =============== */
 
-.maskiner {
+#maskiner {
     display: flex;
-    padding: 30px 16px;
-    flex-direction: column;
-    align-items: center;
-    gap: 55px;
+    justify-content: center;
     background-color: var(--header-bg-color);
 }
 
-.maskiner>p {
+#maskiner-inner{
+    display: flex;
+    padding: 30px 16px;
+    flex-direction: column;
+    gap: 55px;
+}
+
+#maskiner-inner>p {
     max-width: 500px;
 }
 
 .maskine-box {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
     max-width: 500px;
 }
@@ -230,7 +212,6 @@
 #kurser-intro {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
     max-width: 500px;
 }
@@ -238,7 +219,6 @@
 #badge-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
     max-width: 500px;
 }
@@ -284,11 +264,18 @@
 
 #ansatte {
     display: flex;
+    justify-content: center;
+
+    background: var(--color-light-blue);
+}
+
+#ansatte-inner {
+    display: flex;
     padding: 30px 16px;
     flex-direction: column;
     gap: 30px;
-
-    background: var(--color-light-blue);
+    max-width: 500px;
+    width: 100%;
 }
 
 #ansatte-kontaktpersoner {
@@ -335,7 +322,6 @@
 
 .praktisk-info {
     background-color: var(--color-dark-blue);
-
     display: flex;
     justify-content: center;
 }
@@ -346,6 +332,7 @@
     flex-direction: column;
     gap: 25px;
     max-width: 500px;
+    width: 100%;
 }
 
 .praktisk-info-box {
@@ -354,15 +341,9 @@
     padding: 10px 16px;
     justify-content: space-between;
     align-items: center;
-    align-self: stretch;
     border-radius: 5px;
     background: var(--color-green);
 }
-
-
-
-/* =============== Section: footer =============== */
-
 
 
 /* ========================================================================================== */
