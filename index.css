@@ -519,6 +519,31 @@
 
 
     /* =============== Section: ansatte =============== */
+    #ansatte {
+        padding: 48px 24px;
+    }
+
+    #ansatte-inner {
+        gap: 48px;
+        max-width: 710px;
+        padding: 0;
+        width: 100%;
+    }
+
+    #ansatte-kontaktpersoner {
+        gap: 0;
+    }
+
+    .kontaktperson-box-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 48px;
+    }
+
+    .kontaktperson-box {
+        max-width: 330px;
+        width: 100%;
+    }
 
 
     /* =============== Section: praktisk information =============== */
