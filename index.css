@@ -349,4 +349,47 @@
 /* ========================================================================================== */
 
 /* =============== Media Query =============== */
-@media only screen and (min-width: 901px) {}
+@media only screen and (min-width: 901px) {
+
+    /* =============== Section: Video banner =============== */
+    #banner {
+        max-width: unset;
+    }
+
+    #banner-inner {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 48px;
+    }
+
+    #banner-inner-box {
+        width: 100%;
+        max-width: 1248px;
+        padding: 0px 24px;
+    }
+
+    #banner-headline {
+        position: relative;
+        padding: 24px;
+        border-radius: 5px;
+
+        bottom: unset;
+        left: unset;
+    }
+
+    /* =============== Section: fablab introduktion =============== */
+
+
+    /* =============== Section: maskiner =============== */
+
+
+    /* =============== Section: kurser =============== */
+
+
+    /* =============== Section: ansatte =============== */
+
+
+    /* =============== Section: praktisk information =============== */
+}
