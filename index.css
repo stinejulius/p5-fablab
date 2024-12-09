@@ -208,6 +208,10 @@
     height: 100%;
 }
 
+#maskiner-inner-desktop {
+    display: none;
+}
+
 
 
 /* =============== Section: kurser =============== */
@@ -458,6 +462,56 @@
 
 
     /* =============== Section: maskiner =============== */
+    #maskiner-inner {
+        display: none;
+    }
+
+    #maskiner {
+        display: flex;
+        padding: 48px 0px;
+        justify-content: center;
+    }
+
+    #maskiner-inner-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        max-width: 1248px;
+        padding: 0px 24px;
+    }
+
+    .maskine-box-desktop {
+        display: flex;
+        gap: 98px;
+    }
+
+    .maskine-box-desktop-img {
+        max-width: 551px;
+        width: 100%;
+    }
+
+    .maskine-box-desktop-text {
+        display: flex;
+        max-width: 551px;
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #maskinerne-desktop-cta-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    #maskinerne-desktop-cta-text {
+        display: flex;
+        max-width: 551px;
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+    }
+
 
 
 
