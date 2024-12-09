@@ -155,12 +155,10 @@ p.small {
 }
 
 
-/* =============== Header | mobile =============== */
-#header-mobile {
+/* =============== Header =============== */
+#header {
     display: flex;
     height: 60px;
-    padding: 0px 16px;
-    justify-content: space-between;
     align-items: center;
 
     border-bottom: 2px solid var(--color-dark-blue);
@@ -174,13 +172,17 @@ p.small {
     z-index: 100;
 }
 
+#header-inner {
+    display: flex;
+    padding: 0px 16px;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .header-icons {
     height: 45px;
     width: 45px;
 }
-
-
-/* =============== Header | desktop =============== */
 
 
 
@@ -212,25 +214,31 @@ p.small {
 
 /* =============== Footer | mobile =============== */
 
-#footer-mobile {
+#footer {
+    display: flex;
+    justify-content: center;
+    background: var(--footer-bg-color);
+}
+
+#footer-inner {
     display: flex;
     padding: 30px 0px 10px 0px;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    background: var(--footer-bg-color);
 }
 
-#footer-mobile-icons {
+#footer-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
 }
 
-.footer-mobile-icon {
+.footer-icon {
     width: 44px;
 }
+
 
 /* =============== Footer | desktop =============== */
 
@@ -239,4 +247,37 @@ p.small {
 /* ========================================================================================== */
 
 /* =============== Media Query =============== */
-@media only screen and (min-width: 901px) {}
+@media only screen and (min-width: 901px) {
+
+    /* =============== Typography | desktop =============== */
+
+
+
+    /* =============== Header =============== */
+    #header {
+        justify-content: center;
+    }
+
+    #header-inner {
+        max-width: 1248px;
+        padding: 0px 24px;
+    }
+
+
+    /* =============== Footer =============== */
+    #footer {
+        height: 60px;
+    }
+    
+    #footer-inner {
+        flex-direction: row-reverse;
+        width: 100%;
+        max-width: 1248px;
+        justify-content: space-between;
+        padding: 0 24px;
+    }
+
+    #footer-icons {
+        gap: 24px;
+    }
+}
