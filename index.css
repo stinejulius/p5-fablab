@@ -460,7 +460,101 @@
 
 
     /* =============== Section: kurser =============== */
+    #kurser {
+        display: none;
+    }
 
+    #kurser-desktop {
+        display: flex;
+        padding: 48px 48px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-coral-red);
+    }
+
+    #kurser-content-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        max-width: 1248px;
+    }
+
+    .kurser-content-inner-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .kurser-text-and-img-desktop {
+        display: flex;
+        justify-content: center;
+        gap: 98px;
+    }
+
+    .kurser-text-desktop {
+        display: flex;
+        width: 551px;
+        flex-direction: column;
+        gap: 76px;
+    }
+
+    .badge-text-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .kurser-img-desktop {
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+    }
+
+    .kurser-boxes-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 98px;
+    }
+
+    .kurser-boxes-table {
+        display: flex;
+        gap: 98px;
+        max-width: 1248px;
+    }
+
+    .kurser-boxes-table-column {
+        display: flex;
+        width: 552px;
+        flex-direction: column;
+        gap: 98px;
+        max-width: 500px;
+    }
+
+    .kursus-box-desktop {
+        height: 192.04px;
+        position: relative;
+        max-width: 500px;
+    }
+
+    .kursus-innovation-idegenerering-desktop {
+        width: 100%
+    }
+
+    .kursus-box-text-desktop {
+        display: inline-flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--color-light-blue);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 300px;
+    }
 
     /* =============== Section: ansatte =============== */
 
