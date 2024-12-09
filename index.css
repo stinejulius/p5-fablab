@@ -172,6 +172,10 @@
     display: none;
 }
 
+#fablab-for-dig-desktop {
+    display: none;
+}
+
 
 /* =============== Section: maskiner =============== */
 
@@ -360,6 +364,11 @@
 /* =============== Media Query =============== */
 @media only screen and (min-width: 901px) {
 
+    /* =============== CTA button kontakt =============== */
+    .cta-button-kontakt {
+        padding: 5px 24px;
+    }
+
     /* =============== Section: Video banner =============== */
     #banner {
         max-width: unset;
@@ -389,7 +398,7 @@
     }
 
     /* =============== Section: fablab introduktion =============== */
-    #fablab-introduction {
+    #hvad-er-fablab {
         display: none;
     }
 
@@ -460,7 +469,11 @@
 }
 
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1200px) {
+
+    #fablab-introduction {
+        display: none;
+    }
 
     /* Fablab for dig desktop */
     #fablab-for-dig-desktop {
@@ -514,10 +527,15 @@
         background: var(--color-light-blue);
     }
 
-    #field-desktop-active-left {
+    .field-desktop.active {
         border-radius: 5px 0px 0px 0px;
-        border-top: unset;
+        border-top: 4px solid transparent;
+        border-left: 4px solid transparent;
         background: var(--color-baby-blue);
+    }
+
+    .field-desktop:last-child {
+        border-radius: 0px 5px 0px 0px;
     }
 
     .field-desktop-content {
@@ -576,7 +594,8 @@
 
     #fablab-for-dig-desktop-cta-buttons {
         display: flex;
-        align-items: center;
-        gap: 69px;
+        width: 100%;
+        max-width: 400px;
+        justify-content: space-between;
     }
 }

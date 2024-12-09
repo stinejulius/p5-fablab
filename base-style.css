@@ -263,6 +263,10 @@ p.small {
         font-size: 18px;
     }
 
+    /* =============== CTA button =============== */
+    .cta-button {
+        padding: 5px 24px;
+    }
 
     /* =============== Header =============== */
     #header {
