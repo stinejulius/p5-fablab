@@ -406,6 +406,7 @@
         height: 450px;
         align-items: center;
         gap: 98px;
+        justify-content: space-between;
     }
 
     #hvad-er-fablab-inner-desktop-img {
