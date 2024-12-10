@@ -1,13 +1,11 @@
 // Stine Julius
 // Field input picker drop down - mobile (Fagområde vælger)
-/**
- * Viariabler med starter med småt
- * Funktioner starter med stort
- */
 
+//Variables start with lowercase, functions start with uppercase
 
 // Check if JavaScript is working in console
 console.log("The site is working");
+
 
 /**
  * GLOBAL VARIABLES
