@@ -7,19 +7,24 @@
     <title>FabLab</title>
     <link rel="stylesheet" href="base-style.css">
     <link rel="stylesheet" href="index.css">
+    <script src="javascript/field-input-picker-drop-down.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script defer src="mobile-menu.js"></script>
+    <script src="dropdown-info.js" defer></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header id="header-mobile">
-        <img class="header-icons" src="assets/illustrations/mobile/mini-fablab-logo.svg" alt="FabLab logo">
-        <nav>
+    <header id="header">
+        <div id="header-inner">
+            <img class="header-icons" src="assets/illustrations/mobile/mini-fablab-logo.svg" alt="FabLab logo">
+            <img class="header-icons" src="assets/illustrations/mobile/menu-icon.svg" alt="Menu ikon">
+        </div>
+      <nav>
             <img class="header-icons" src="assets/illustrations/mobile/menu-icon.svg" alt="Menu ikon" id="menu-icon">
             <ul class="mobile-menu" id="mobile-menu">
                 <li><a href="#banner">Hjem</a></li>
@@ -40,8 +45,12 @@
                 <source src="assets/videos/fablab-video-banner.webm" type="video/webm">
                 Din browser understøtter ikke videoen.
             </video>
-            <div id="banner-headline">
-                <h1> Velkommen til FabLab </h1>
+            <div id="banner-inner">
+                <div id="banner-inner-box">
+                    <div id="banner-headline">
+                        <h1> Velkommen til FabLab </h1>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -50,10 +59,157 @@
             <div class="fablab-introduction">
                 <div class="hvad-er-fablab">
                     <h2>I FabLab kan du mere end du tror</h2>
+        <section>
+            <!-- Desktop -->
+            <div id="fablab-introduction-desktop">
+                <div id="hvad-er-fablab-desktop">
+                    <div id="hvad-er-fablab-content-desktop">
+                        <h2> I FabLab kan du mere end du tror </h2>
+                        <div id="hvad-er-fablab-inner-desktop">
+                            <div id="hvad-er-fablab-bodytext-button-desktop">
+                                <div id="hvad-er-fablab-text-desktop">
+                                    <h4 class="light-text"> Hvad er FabLab? </h4>
+                                    <p>
+                                        FabLab er et prototypeværksted, men også meget mere end bare det. FabLab er et
+                                        sted hvor du har mulighed for at udvikle, idé-generere og lære nye kompetencer.
+                                    </p>
+                                    <p>
+                                        Hos FabLab har vi mange forskellige maskiner såsom laserskærer, 3D-print,
+                                        T-shirt print, plakatprinter og klistermærke printer. Alle studerende på UCL har
+                                        lov til at benytte disse maskiner i samarbejde med de ansatte i FabLab. <br> Vi
+                                        vil i samarbejde med dig, kunne hjælpe med at omsætte ideer til prototyper fra
+                                        start til slut i processen.
+                                    </p>
+                                </div>
+                                <a class="cta-button" href="#kurser">
+                                    <h4> SE KURSER </h4>
+                                </a>
+                            </div>
+                            <img id="hvad-er-fablab-inner-desktop-img"
+                                src="assets/images/desktop/hvad-er-fablab-img-desktop.webp" alt="3D printere i FabLab">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="fablab-for-dig-desktop">
+                    <div id="fablab-for-dig-content-desktop">
+                        <div id="fablab-for-dig-text-desktop">
+                            <h2> FabLab for dig </h2>
+                            <p>
+                                FabLab er for alle UCL's studerende, men det er ikke alle som er klar over hvad FabLab
+                                kan hjælpe med. Derfor vil vi gerne fortælle hvorfor vi mener, at det er oplagt for dig
+                                at benytte FabLabs forskellige faciliteter. Tag et kig herunder, og læs mere om hvorfor
+                                FabLab er relevant for lige netop dig.
+                            </p>
+                        </div>
+
+                        <div class="fields-desktop-box">
+                            <div id="fields-desktop">
+                                <div class="field-desktop active">
+                                    <h4> Business og <br> digital udvikling </h4>
+                                </div>
+
+                                <div class="field-desktop">
+                                    <h4> Byggeri og <br> teknologi </h4>
+                                </div>
+
+                                <div class="field-desktop">
+                                    <h4> Ledelse og <br> administration </h4>
+                                </div>
+
+                                <div class="field-desktop">
+                                    <h4> Pædagogik og <br> undervisning </h4>
+                                </div>
+
+                                <div class="field-desktop">
+                                    <h4> Sundhed og <br> socialt arbejde </h4>
+                                </div>
+                            </div>
+
+                            <div class="field-desktop-content">
+                                <div id="field-desktop-inner-text">
+                                    <div class="field-desktop-text-box">
+                                        <h4> Går du på en uddannelse indenfor Business og digital udvikling, og
+                                            overvejer du om FabLab er relevant for dig? </h4>
+                                        <p class="dark-text">
+                                            Her hos FabLab har vi meget at byde på, og lige meget om du studerer
+                                            markedsføringsøkonom eller multimediedesigner, så er vi sikre på at FabLab
+                                            kunne være interessant for dig. I FabLab har du mulighed for at udvikle
+                                            prototyper, idegenerere og udfolde din kreativitet. <br> Derudover kan du
+                                            udvide dine kompetencer ved at tage et kursus til en af vores mange
+                                            maskiner. Her får du praktisk læring som du kan tage med videre i
+                                            arbejdslivet efter studiet. <br> Det er oplagt at benytte FabLab til
+                                            projekter, og specielt til hvis du skal lave en bacheloropgave. Her kan vi
+                                            hjælpe dig lige fra starten med idegenerering og processen frem.
+                                        </p>
+                                    </div>
+
+                                    <div class="field-desktop-text-box">
+                                        <h4> Ideer til hvad du kan lave i FabLab </h4>
+                                        <p class="dark-text">
+                                            Du har mulighed for at lave skræddersyede genstande eller prototyper til
+                                            kunder og klienter. Du kan medbringe dem til præsentationer, hvor modtageren
+                                            har mulighed for at se en prototype med egne øjne og mærke produktet i egne
+                                            hænder. <br> Hvis du arbejder med branding kan du lave logoer, T-shirts,
+                                            badges mm. som er salgsfremmende for kunden. Idegenerering til
+                                            markedsføringskampagner, med mulighed for print af plakater.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="field-desktop-image-and-more">
+                                    <div class="field-desktop-image-box">
+                                        <img class="field-desktop-img"
+                                            src="assets/images/desktop/field-business-desktop.webp"
+                                            alt="Nogle multimediedesigneres prototype lavet i FabLab">
+                                        <p class="small">
+                                            Her har multimediedesignere brugt FabLab til at fremstille en prototype til
+                                            deres klient præsentation.
+                                        </p>
+                                    </div>
+
+                                    <div class="field-desktop-educations">
+                                        <p class="bold dark-text"> Uddannelser under Business og digital udvikling </p>
+                                        <p class="small">
+                                            Datamatiker (+ online), Digital konceptudvikling, E-handel, Financial
+                                            controller, Finans, Finansøkonom, Handelsøkonom, Innovation og
+                                            entrepreneurship (+ online), International handel og markedsføring,
+                                            International hospitality management, IT-sikkerhed, IT-teknolog,
+                                            Logistikøkonom, Markedsføringsøkonom, Multimediedesigner, Produktudvikling
+                                            og teknisk integration online, Service- og oplevelsesøkonom,
+                                            Softwareudvikling, Sport management, Webudvikling og Økonomi og IT
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="fablab-for-dig-desktop-cta">
+                            <p class="italic">
+                                Vi står klar til at hjælpe dig lige der hvor <span class="bold"> du </span> er i
+                                processen.
+                            </p>
+                            <div id="fablab-for-dig-desktop-cta-buttons">
+                                <a class="cta-button" href="#kurser">
+                                    <h4> SE KURSER </h4>
+                                </a>
+                                <a class="cta-button-kontakt" href="#ansatte">
+                                    <h4> KONTAKT OS </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile -->
+            <div id="fablab-introduction">
+                <div id="hvad-er-fablab">
+                    <h2> I FabLab kan du mere end du tror </h2>
                     <img class="hvad-er-fablab-img" src="assets/images/mobile/hvad-er-fablab-img.webp"
                         alt="række af 3D-printere">
-                    <div class="hvad-er-fablab-inner">
-                        <div class="hvad-er-fablab-inner-text">
+                    <div id="hvad-er-fablab-inner">
+                        <div id="hvad-er-fablab-inner-text">
                             <p class="bold">Hvad er FabLab?</p>
                             <p class="bold-italic"> FabLab er et prototypeværksted, men også meget mere end bare det.
                                 FabLab
@@ -66,8 +222,8 @@
                                 til
                                 slut i processen.</p>
                         </div>
-                        <a class="cta-button" href="">
-                            <h4>Se kurser</h4>
+                        <a class="cta-button" href="#kurser">
+                            <h4> SE KURSER </h4>
                         </a>
                     </div>
                 </div>
@@ -75,68 +231,154 @@
                 <div class="fablab-for-dig">
                     <h2>FabLab for dig</h2>
                     <p>FabLab er for alle UCL's studerende, men det er ikke alle som er klar over hvad FabLab kan hjælpe
+                <div id="fablab-for-dig">
+                    <h2> FabLab for dig </h2>
+                    <p>
+                        FabLab er for alle UCL's studerende, men det er ikke alle som er klar over hvad FabLab kan
+                        hjælpe
                         med. Derfor vil vi gerne fortælle hvorfor vi mener, at det er oplagt for dig at benytte FabLabs
                         forskellige faciliteter. Tag et kig herunder, og læs mere om hvorfor FabLab er relevant for lige
-                        netop dig.</p>
+                        netop dig.
+                    </p>
                     <div class="fablab-drop-down-mobile">
-                        <div class="field-input-picker">
+                        <div class="field-input-picker" id="field-box-outer">
                             <div class="field-input-text-box">
-                                <p class="small">-Business og digital udvikling-</p>
+                                <p class="field-input-text-box-p small"> -Business og digital udvikling- </p>
                             </div>
                             <div class="arrow-button-box">
                                 <img src="assets/illustrations/mobile/arrow-small-down-mobile.svg" alt="pil ned">
                             </div>
                         </div>
-                        <div class="field-content">
+
+                        <div class="field-content active" id="field-content-0">
                             <div class="business-intro">
-                                <p class="dark-text">Går du på en uddannelse indenfor Business og digital udvikling, og
-                                    overvejer du om FabLab er relevant for dig?</p>
-                                <p class="dark-text">Her hos FabLab har vi meget at byde på, og lige meget om du
-                                    studerer
-                                    markedsføringsøkonom eller multimediedesigner, så er vi sikre på at FabLab kunne
-                                    være
-                                    interessant for dig. I FabLab har du mulighed for at udvikle prototyper, idegenerere
-                                    og
-                                    udfolde din kreativitet.</p>
-                                <p class="dark-text">Derudover kan du udvide dine kompetencer ved at tage et kursus til
-                                    en
-                                    af vores mange maskiner. Her får du praktisk læring som du kan tage med videre i
-                                    arbejdslivet efter studiet.</p>
-                                <p class="dark-text">Det er oplagt at benytte FabLab til projekter, og specielt til hvis
-                                    du
-                                    skal lave en bacheloropgave. Her kan vi hjælpe dig lige fra starten med
-                                    idegenerering og
-                                    processen frem.</p>
-                            </div>
-                            <div class="business-image-and-text">
-                                <img class="field-business-mobile"
-                                    src="assets/images/mobile/field-content-business.webp" alt="række af 3D-printere">
-                                <p class="small">Her har multimediedesignere brugt FabLab til at fremstille en prototype
-                                    til
-                                    deres klient præsentation.</p>
-                            </div>
-                            <div class="business-ideas">
-                                <h4 class="dark-text">Ideer til hvad du kan lave i FabLab</h4>
-                                <p class="dark-text">Du har mulighed for at lave skræddersyede genstande eller
-                                    prototyper
-                                    til kunder og klienter. Du kan medbringe dem til præsentationer, hvor modtageren har
-                                    mulighed for at se en prototype med egne øjne og mærke produktet i egne hænder.</p>
-                                <p class="dark-text">Hvis du arbejder med branding kan du lave logoer, T-shirts, badges
-                                    mm.
-                                    som er salgsfremmende for kunden. Idegenerering til markedsføringskampagner, med
-                                    mulighed for print af plakater.</p>
-                                <p class="dark-text">Vi står klar til at hjælpe dig lige der hvor du er i processen.
+                                <p class="dark-text">
+                                    Går du på en uddannelse indenfor Business og digital udvikling, og
+                                    overvejer du om FabLab er relevant for dig?
+                                </p>
+                                <p class="dark-text">
+                                    Her hos FabLab har vi meget at byde på, og lige meget om du
+                                    studerer markedsføringsøkonom eller multimediedesigner, så er vi sikre på at FabLab
+                                    kunne være interessant for dig. I FabLab har du mulighed for at udvikle prototyper,
+                                    idegenerere og udfolde din kreativitet.
+                                </p>
+                                <p class="dark-text">
+                                    Derudover kan du udvide dine kompetencer ved at tage et kursus til en af vores mange
+                                    maskiner. Her får du praktisk læring som du kan tage med videre i arbejdslivet efter
+                                    studiet.
+                                </p>
+                                <p class="dark-text">
+                                    Det er oplagt at benytte FabLab til projekter, og specielt til hvis du skal lave en
+                                    bacheloropgave. Her kan vi hjælpe dig lige fra starten med idegenerering og
+                                    processen frem.
                                 </p>
                             </div>
+
+                            <div class="business-image-and-text">
+                                <img class="field-business-mobile"
+                                    src="assets/images/mobile/field-content-business.webp"
+                                    alt="Produkt som multimediedesignere havde fremstillet til klienpræsentation i FabLab">
+                                <p class="small">
+                                    Her har multimediedesignere brugt FabLab til at fremstille en prototype til deres
+                                    klient præsentation.
+                                </p>
+                            </div>
+
+                            <div class="business-ideas">
+                                <h4 class="dark-text"> Ideer til hvad du kan lave i FabLab </h4>
+                                <p class="dark-text">
+                                    Du har mulighed for at lave skræddersyede genstande eller prototyper til kunder og
+                                    klienter. Du kan medbringe dem til præsentationer, hvor modtageren har mulighed for
+                                    at se en prototype med egne øjne og mærke produktet i egne hænder.
+                                </p>
+                                <p class="dark-text">
+                                    Hvis du arbejder med branding kan du lave logoer, T-shirts, badges mm. som er
+                                    salgsfremmende for kunden. Idegenerering til markedsføringskampagner, med mulighed
+                                    for print af plakater.
+                                </p>
+                                <p class="dark-text">
+                                    Vi står klar til at hjælpe dig lige der hvor du er i processen.
+                                </p>
+                            </div>
+
                             <div class="business-cta">
-                                <a class="cta-button" href="">
-                                    <h4>Se kurser</h4>
+                                <a class="cta-button" href="#kurser">
+                                    <h4> SE KURSER </h4>
                                 </a>
-                                <a class="cta-button-kontakt" href="">
-                                    <h4>Kontakt os</h4>
+                                <a class="cta-button-kontakt" href="#ansatte">
+                                    <h4> KONTAKT OS </h4>
                                 </a>
                             
                             </div>
+                        </div>
+
+                        <div class="field-content" id="field-content-1">
+                            <div class="business-intro">
+                                <p class="dark-text">
+                                    Går du på en uddannelse indenfor Byggeri og teknologi, og overvejer du om FabLab er
+                                    relevant for dig?
+                                </p>
+                                <p class="dark-text">
+                                    Hos FabLab har vi mange spændende faciliteter som er oplagte for en studerende
+                                    indenfor fagområdet Byggeri og teknologi. I FabLab har du mulighed for at udvikle
+                                    prototyper, idé-generere og udfolde din kreativitet.
+                                </p>
+                                <p class="dark-text">
+                                    Tag et af de mange kurser vi tilbyder og få flere kompetencer du kan sætte på CV'et.
+                                    I FabLab har du mulighed for at få praktisk læring som du kan tage med videre fra
+                                    studiet og ind i arbejdslivet.
+                                </p>
+                            </div>
+
+                            <div class="business-image-and-text">
+                                <img class="field-business-mobile" src="assets/images/mobile/field-byggeri-mobile.webp"
+                                    alt="Prototype af hus model fremstillet af bygningskonstruktører i FabLab">
+                                <p class="small">
+                                    Her har bygningskonstruktører brugt FabLab til at fremstille en prototype model til
+                                    deres projekt.
+                                </p>
+                            </div>
+
+                            <div class="business-ideas">
+                                <h4 class="dark-text"> Ideer til hvad du kan lave i FabLab </h4>
+                                <p class="dark-text">
+                                    FabLab er genialt at benytte hvis du skal lave prototyper eller mini modeller af
+                                    bygninger. Med prototyper kan du tjekke stabiliteten at dine modeller, afprøve dine
+                                    innovationer og arbejde med en iterativ designproces hvor du hurtigt har noget i
+                                    hænderne.
+                                </p>
+                                <p class="dark-text">
+                                    I FabLab har du mulighed for at lære nyt, samt prøve at arbejde tværfagligt med din
+                                    egen teori fra studiet, sammenkoblet med vores erfaring inden for designprocesser og
+                                    innovation. Med prototype kan du bedre visualisere processen og det færdige produkt
+                                    for din kunde eller klient - samtidig er det perfekt at benytte sig at til
+                                    præsentationer.
+                                </p>
+                                <p class="dark-text">
+                                    Vi står klar til at hjælpe dig lige der hvor du er i processen.
+                                </p>
+                            </div>
+
+                            <div class="business-cta">
+                                <a class="cta-button" href="#kurser">
+                                    <h4> SE KURSER </h4>
+                                </a>
+                                <a class="cta-button-kontakt" href="#ansatte">
+                                    <h4> KONTAKT OS </h4>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="field-content" id="field-content-2">
+                            <p class="dark-text"> Ikke implementeret </p>
+                        </div>
+
+                        <div class="field-content" id="field-content-3">
+                            <p class="dark-text"> Ikke implementeret </p>
+                        </div>
+
+                        <div class="field-content" id="field-content-4">
+                            <p class="dark-text"> Ikke implementeret </p>
                         </div>
                     </div>
                 </div>
@@ -146,6 +388,7 @@
 
         <!-- Maskiner -->
         <section id="maskiner">
+            <!-- Mobile -->
             <div id="maskiner-inner">
                 <h2 class="dark-text">Maskinerne</h2>
                 <div class="maskine-box">
@@ -183,13 +426,181 @@
                     klistermærker
                     og badges mm.</p>
                 <p class="dark-text">Kom i FabLab og tag et kursus i maskinerne så du kan benytte dem på egen hånd!</p>
-                <a class="cta-button-kontakt" href="">
-                    <h4>Kontakt os</h4>
+                <a class="cta-button-kontakt" href="#ansatte">
+                    <h4> KONTAKT OS </h4>
                 </a>
+            </div>
+
+            <!-- Desktop -->
+            <div id="maskiner-inner-desktop">
+                <h2 class="dark-text"> Maskinerne </h2>
+
+                <div class="maskine-box-desktop">
+                    <img class="maskine-box-desktop-img" src="assets/images/desktop/maskine-laserskærer-desktop.webp"
+                        alt="Laserskærer maskine i FabLab">
+                    <div class="maskine-box-desktop-text">
+                        <h4> Laserskærer </h4>
+                        <p class="dark-text">
+                            Laserskæring er en maskine der anvendes til udskæring og gravering af plader, ved at anvende
+                            laserlys. <br> Ved hjælp af laserlyset kan den brænde, smelte eller fordampe materialet, så
+                            det får en helt skarp kant og facon. <br> Laserskæreren kan bruges til mange formål, lige
+                            fra nøgleringe og puslespil, til større skilte og prototyper. Mulighederne er uendelige!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="maskine-box-desktop">
+                    <img class="maskine-box-desktop-img" src="assets/images/desktop/maskine-3d-print-desktop.webp"
+                        alt="3D printer i FabLab">
+                    <div class="maskine-box-desktop-text">
+                        <h4> 3D-printer </h4>
+                        <p class="dark-text">
+                            En 3D printer gør det muligt, at printe tredimensionelle figurer. Når designet er sendt til
+                            printeren, vil den begynde at fremstille figuren, ved at printe tynde lag af det valgte
+                            materiale - også kaldet filament. Når filamentet kommer ud er det opvarmet til en høj
+                            temperatur, der gør det muligt for de tynde lag at smelte sammen. <br> På denne måde får du
+                            mulighed for at stå med dine figurer i hånden, fremfor kun at se dem på en skærm. Det er
+                            perfekt til prototyper og præsentationer, som man kan fremvise til sin klient eller kunde.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="maskinerne-desktop-cta-box">
+                    <div id="maskinerne-desktop-cta-text">
+                        <h4> FabLab byder på meget mere! </h4>
+                        <p class="dark-text">
+                            Udover laserskærere og 3D-printere som er de mest brugte maskiner i FabLab, har vi meget
+                            mere at tilbyde. Det er også muligt at lave print på t-shirts, printe plakater, lave
+                            klistermærker og badges mm. <br> Kom i FabLab og tag et kursus i maskinerne så du kan
+                            benytte dem på egen hånd!
+                        </p>
+                    </div>
+
+                    <a class="cta-button-kontakt" href="#ansatte">
+                        <h4> KONTAKT OS </h4>
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Kurser -->
+
+        <!--Kurser desktop-->
+        <section id="kurser-desktop">
+            <div class="kurser-content-desktop">
+                <h2 class="dark-text">Kurser</h2>
+                <div class="kursus-content-inner-desktop">
+                    <div class="kurser-text-and-img-desktop">
+                        <div class="kurser-text-desktop">
+                            <p class="dark-text">I FabLab tilbyder vi et udvalg af kurser, for at give dig flere stærke
+                                kompetencer.
+                                Vi tilbyder kurser i de forskellige maskiner, men også innovationkursus med fokus på
+                                nytænkning og idégenerering.</p>
+                            <div class="badge-text-desktop">
+                                <h4>Badgesystem - boost dit CV</h4>
+                                <p class="dark-text">I forbindelse med vores forskellige kurser, har vi et badgesystem.
+                                    Badgesystemet går ud på at man ved hvert gennemført kursus, får tilsendt sin badge
+                                    (et bevis) på at man nu kan håndtere den pågældende maskine.
+                                    Dette er en badge du med fordel kan bruge til at booste CV’et!  Book dig ind på et
+                                    af vores kurser og bliv stærk i Fablabs teknologier.</p>
+                                <p class="dark-text">OBS. Vi gør opmærksom på at det ikke er tilladt at benytte FabLabs
+                                    maskiner, uden et kursus.</p>
+                            </div>
+                        </div>
+                        <div class="kurser-img-desktop">
+                            <img class="kurser-img-desktop" src="assets/images/desktop/kurser-img-desktop.webp"
+                                alt="3D printer program på computerskærm">
+                        </div>
+
+                    </div>
+                    <div class="kurser-boxes-desktop">
+                        <div class="kurser-boxes-table">
+                            <div class="kurser-boxes-table-column">
+                                <div class="kursus-box-desktop">
+                                    <div class="kursus-innovation-idegenerering-desktop">
+                                        <img class="kursus-box-image"
+                                            src="assets/images/desktop/kursus-innovation-idegenerering-desktop.webp"
+                                            alt="billede af fablab">
+                                    </div>
+                                    <div class="kursus-box-desktop-text">
+                                        <h4>Innovation og idegenerering</h4>
+                                    </div>
+                                </div>
+                                <div class="kursus-box-desktop">
+                                    <div class="laserskærer">
+                                        <img class="kursus-box-image"
+                                            src="assets/images/desktop/kursus-laserskærer-desktop.webp"
+                                            alt="laserskærer">
+                                    </div>
+                                    <div class="kursus-box-desktop-text">
+                                        <h4>Laserskærer</h4>
+                                    </div>
+                                </div>
+                                <div class="kursus-box-desktop">
+                                    <div class="kursus-innovation-idegenerering-desktop">
+                                        <img class="kursus-box-image"
+                                            src="assets/images/desktop/kursus-3d-print-desktop.webp"
+                                            alt="3D printer">
+                                    </div>
+                                    <div class="kursus-box-desktop-text">
+                                        <h4>3D-printer</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="kurser-boxes-table-column">
+                                <div class="kursus-box-desktop">
+                                    <div class="kursus-t-shirt-print">
+                                        <img class="kursus-box-image"
+                                            src="assets/images/desktop/kursus-t-shirt-print-desktop.webp"
+                                            alt="t-shirt printer">
+                                    </div>
+                                    <div class="kursus-box-desktop-text">
+                                        <h4>T-shirt print</h4>
+                                    </div>
+                                </div>
+                                <div class="kursus-box-desktop">
+                                    <div class="plakat-print">
+                                        <img class="kursus-box-image"
+                                            src="assets/images/desktop/kursus-plakat-print-desktop.webp"
+                                            alt="plakat printer">
+                                    </div>
+                                    <div class="kursus-box-desktop-text">
+                                        <h4>Plakat print</h4>
+                                    </div>
+                                </div>
+                                <div class="kursus-box-desktop">
+                                    <div class="kursus-badges">
+                                        <img class="kursus-box-image"
+                                            src="assets/images/desktop/kursus-badges-desktop.webp"
+                                            alt="badges">
+                                    </div>
+                                    <div class="kursus-box-desktop-text">
+                                        <h4>Badges</h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <div class="kursus-box-desktop">
+                            <div class="kursus-klistermærke">
+                                <img class="kursus-box-image"
+                                    src="assets/images/desktop/kursus-klistermærke-desktop.webp"
+                                    alt="klistermærke printer">
+                            </div>
+                            <div class="kursus-box-desktop-text">
+                                <h4>Klistermærke print</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--Kurser mobile-->
         <section id="kurser">
             <div id="kurser-intro">
                 <h2 class="dark-text"> Kurser </h2>
@@ -248,26 +659,26 @@
                 </div>
 
                 <div class="kursus-box">
-                    <img class="kursus-box-image" src="assets/images/mobile/kursus-innovation.webp"
-                        alt="FabLab lokalet">
+                    <img class="kursus-box-image" src="assets/images/mobile/kursus-klistermærke.webp"
+                        alt="klistermærke printer">
                     <div class="kursus-box-text">
-                        <h4> Innovation og idegenerering </h4>
+                        <h4> Klistermærke print </h4>
                     </div>
                 </div>
 
                 <div class="kursus-box">
-                    <img class="kursus-box-image" src="assets/images/mobile/kursus-innovation.webp"
-                        alt="FabLab lokalet">
+                    <img class="kursus-box-image" src="assets/images/mobile/kursus-plakat.webp"
+                        alt="plakat printer">
                     <div class="kursus-box-text">
-                        <h4> Innovation og idegenerering </h4>
+                        <h4> Plakat </h4>
                     </div>
                 </div>
 
                 <div class="kursus-box">
-                    <img class="kursus-box-image" src="assets/images/mobile/kursus-innovation.webp"
-                        alt="FabLab lokalet">
+                    <img class="kursus-box-image" src="assets/images/mobile/kursus-badges-mobile.webp"
+                        alt="badges">
                     <div class="kursus-box-text">
-                        <h4> Innovation og idegenerering </h4>
+                        <h4> Badges </h4>
                     </div>
                 </div>
             </div>
@@ -321,7 +732,6 @@
                                     src="assets/illustrations/mobile/kontaktperson-icon.svg"
                                     alt="Studentermedhjælper Mikkel">
                             </div>
-
                             <div class="kontaktperson-box-text">
                                 <h4> Mikkel </h4>
                                 <div class="kontaktperson-box-text-inner">
@@ -330,7 +740,10 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
+
+
                 </div>
             </div>
         </section>
@@ -341,42 +754,97 @@
                 <div id="praktisk-info-inner">
                     <h2>Praktisk information</h2>
                     <div class="praktisk-info-box">
-                        <h4>Kontaktinformation</h4>
-                        <img src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        <div class="praktisk-info-box-overskrift">
+                            <h4>Kontaktinformation</h4>
+                            <img class="pil" src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        </div>
+                        <div class="praktisk-info-box-content">
+                            <p>FabLab mail: fablab@ucl.dk</p>
+                            <p>FabLab Manager Michael Angelo: micj@ucl.dk</p>
+                        </div>
                     </div>
                     <div class="praktisk-info-box">
-                        <h4>Åbningstider</h4>
-                        <img src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        <div class="praktisk-info-box-overskrift">
+                            <h4>Åbningstider</h4>
+                            <img class="pil" src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        </div>
+                        <div class="praktisk-info-box-content">
+                            <p>FabLab er åbent alle hverdage kl. 08:00 - 16:00.</p>
+                        </div>
                     </div>
                     <div class="praktisk-info-box">
-                        <h4>Priser</h4>
-                        <img src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        <div class="praktisk-info-box-overskrift">
+                            <h4>Priser</h4>
+                            <img class="pil" src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        </div>
+                        <div class="praktisk-info-box-content">
+                            <p>Som studerende på UCL får du gratis adgang til alle FabLabs faciliteter, til alle dine studierelaterede projekter.
+                            <br>Har du lyst til at bruge FabLab til privat brug?
+                            <br>Det kan du også, vi tager blot en lille pris for materialerne.
+                            <br>
+                            <br>Studierelaterede projekter vil altid have fortrinsret.</p>
+                        </div>
                     </div>
                     <div class="praktisk-info-box">
-                        <h4>Vejledning</h4>
-                        <img src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        <div class="praktisk-info-box-overskrift">
+                            <h4>Vejledning</h4>
+                            <img class="pil" src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        </div>
+                        <div class="praktisk-info-box-content">
+                            <p>I FabLab har du adgang til en række avancerede maskiner. 
+                            <br>Nogle er nemme at bruge og andre kræver lidt mere oplæring. 
+                            <br>
+                            <br>FabLab er altid bemandet af vores passionerede medarbejdere, der altid står klar til at hjælpe dig. Om du er i gang med projektopstart eller om du er nået til at lave den færdige prototype, så er vi klar.</p>
+                        </div>
                     </div>
                     <div class="praktisk-info-box">
-                        <h4>Hvordan booker jeg en tid i FabLab</h4>
-                        <img src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        <div class="praktisk-info-box-overskrift">
+                            <h4>Hvordan booker jeg en tid i FabLab?</h4>
+                            <img class="pil" src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        </div>
+                        <div class="praktisk-info-box-content">
+                            <p>Du kan booke tid i FabLab via mailadressen fablab@ucl.dk.
+                            <br>
+                            <br>Samtidig er du altid velkommen til at kigge forbi Fablab og booke tid - eller bare kigge forbi til en snak!</p>
+                        </div>
                     </div>
                     <div class="praktisk-info-box">
-                        <h4>Hvordan tilmelder jeg mig et kursus i FabLab</h4>
-                        <img src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        <div class="praktisk-info-box-overskrift">
+                            <h4>Hvordan tilmelder jeg mig et kursus i FabLab?</h4>
+                            <img class="pil" src="assets/illustrations/mobile/arrow-small-down-mobile-dark.svg" alt="pil ned">
+                        </div>
+                        <div class="praktisk-info-box-content">
+                            <p>Ønsker du at tilmelde dig et af vores kurser? 
+                            <br>Så kan du læse mere herom i kursus-sektionen ovenfor.</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer-mobile">
-        <div id="footer-mobile-icons">
-            <img class="footer-mobile-icon" src="assets/illustrations/mobile/facebook-icon.svg" alt="Facebook ikon">
-            <img src="assets/illustrations/mobile/instagram-icon.svg" alt="Instagram ikon">
-            <img src="assets/illustrations/mobile/ucl-icon.svg" alt="UCL logo">
+    <footer id="footer">
+        <div id="footer-inner">
+            <div id="footer-icons">
+                <a href="https://www.facebook.com/ucl.dk/">
+                    <img class="footer-icon" target="_blank" src="assets/illustrations/mobile/facebook-icon.svg"
+                        alt="Facebook ikon">
+                </a>
+
+                <a href="https://www.instagram.com/ucl.dk/?hl=da">
+                    <img class="footer-icon" target="_blank" src="assets/illustrations/mobile/instagram-icon.svg"
+                        alt="Instagram ikon">
+                </a>
+
+                <a href="https://www.ucl.dk/" target="_blank">
+                    <img class="footer-icon" src="assets/illustrations/mobile/ucl-icon.svg" alt="UCL logo">
+                </a>
+            </div>
+            <p class="dark-text"> FabLab UCL © 2024 </p>
         </div>
-        <p class="dark-text"> FabLab UCL © 2024 </p>
+
     </footer>
 </body>
 
