@@ -184,6 +184,45 @@ p.small {
     width: 45px;
 }
 
+/* =============== Menu & website behavior =============== */
+.mobile-menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--color-dark-blue);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+}
+
+.mobile-menu li {
+    margin: 10px 0;
+}
+
+.mobile-menu li a {
+    font-family: poppins;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu li a:hover {
+    color: var(--color-coral-red);
+}
+
+
+/* Show Menu */
+.mobile-menu.active {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 /* =============== CTA button =============== */
