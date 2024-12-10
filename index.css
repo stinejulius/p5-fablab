@@ -163,7 +163,7 @@
 }
 
 .drop-down-education-fields-list p {
-    padding: 15px;
+    padding: 10px;
     border-bottom: 2px solid var(--color-white);
     background-color: var(--color-dark-blue);
     color: var(--color-white);
@@ -171,7 +171,6 @@
 
 .drop-down-education-fields-list p:last-child {
     border-bottom: none;
-    border-radius: 0px 0px 5px 5px;
 }
 
 .drop-down-education-fields-list p:hover {

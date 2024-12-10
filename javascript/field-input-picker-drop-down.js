@@ -27,9 +27,6 @@ const educationFieldNames = [
  */
 inputOuterHTML.addEventListener("click", () => {
     
-    console.log('clicked on input outer html');
-    
-    
     FoldOutEducationFieldNames()
 })
 
@@ -89,7 +86,7 @@ function InsertFieldName(fieldName) {
     const inputBoxHTML = inputOuterHTML.getElementsByClassName("field-input-text-box")[0];
 
     // Find class "field-input-text-box-p" inside of inputBoxHTML, and store in inputTextHTML variable
-    const inputTextHTML = inputBoxHTML.getElementById("field-input-text-box-p")[0];
+    const inputTextHTML = inputBoxHTML.getElementsByClassName("field-input-text-box-p")[0];
 
     // Replace the inner HTML of the variable inputTextHTML with FieldName (p the user clicks on)
     inputTextHTML.innerHTML = fieldName;
@@ -107,11 +104,11 @@ function InsertFieldName(fieldName) {
  */
 function CloseEducationFieldsContainer() {
 
-    // Find the class "drop-down-education-fields-list", and store it in the variable educationFieldsContainerHTML
-    const EducationFieldsContainersHTML = document.getElementsByClassName("drop-down-education-fields-list")[0];
+    // Find the class "drop-down-education-fields-list", and store it in the variable EducationFieldsContainerHTML
+    const educationFieldsContainersHTML = document.getElementsByClassName("drop-down-education-fields-list")[0];
 
     // Calls the function
-    EducationFieldsContainersHTML.remove();
+    educationFieldsContainersHTML.remove();  
 }
 
 
