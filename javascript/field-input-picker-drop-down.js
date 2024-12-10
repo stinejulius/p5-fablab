@@ -26,6 +26,10 @@ const educationFieldNames = [
  * EVENT LISTENER | Listens after a click on inputOuterHTML, calls function FoldOutEducationFieldNames (starts)
  */
 inputOuterHTML.addEventListener("click", () => {
+    
+    console.log('clicked on input outer html');
+    
+    
     FoldOutEducationFieldNames()
 })
 
@@ -35,7 +39,7 @@ inputOuterHTML.addEventListener("click", () => {
  */
 function FoldOutEducationFieldNames() {
     // When trying to open the input picker, first we check if the input picker drop down is already open
-    if (inputOuterHTML.getElementsByClassName(drop-down-education-fields-list).length > 0) {
+    if (inputOuterHTML.getElementsByClassName("drop-down-education-fields-list").length > 0) {
         return;
     } // If it's already open, the function stops here. If not, it goes on. 
 
@@ -98,5 +102,44 @@ function InsertFieldName(fieldName) {
 }
 
 
+/**
+ * FUNCTION | Function removes educationFieldsContainerHTML
+ */
+function CloseEducationFieldsContainer() {
+
+    // Find the class "drop-down-education-fields-list", and store it in the variable educationFieldsContainerHTML
+    const EducationFieldsContainersHTML = document.getElementsByClassName("drop-down-education-fields-list")[0];
+
+    // Calls the function
+    EducationFieldsContainersHTML.remove();
+}
 
 
+/**
+ * EVENT LISTENER | Listens for a click on the whole document (html-body)
+ */
+document.addEventListener("click", function (event) {
+    OnDocumentClick(event);
+})
+
+
+/** 
+ * FUNCTION | Runs with every click on the document
+ */
+function OnDocumentClick(event) {
+    const EducationFieldsContainersHTML = document.getElementsByClassName("drop-down-education-fields-list")[0];
+
+    // If th educationFieldsContainersHTML is undefined, it means that it will not open
+    if (EducationFieldsContainersHTML === undefined) {
+        return;
+    }
+
+    // If event.target is either the EducationFieldsContainersHTML or the inputOuterHTML, then we don't do anything
+    // Event.target is the Element that has been clicked on.
+    if (EducationFieldsContainersHTML.contains(event.target) || inputOuterHTML.contains(event.target)) {
+        return;
+    }
+
+    // Calls the function that removes the EducationFieldsContainersHTML
+    CloseEducationFieldsContainer();
+}

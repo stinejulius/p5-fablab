@@ -142,6 +142,43 @@
     justify-content: center;
 }
 
+/* Style for field-input-picker-drop-down.js */
+#field-box-outer {
+    position: relative;
+}
+
+.drop-down-education-fields-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+    border-right: 4px solid var(--color-coral-red);
+    border-bottom: 4px solid var(--color-coral-red);
+    border-left: 4px solid var(--color-coral-red);
+}
+
+.drop-down-education-fields-list p {
+    padding: 15px;
+    border-bottom: 2px solid var(--color-white);
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+.drop-down-education-fields-list p:last-child {
+    border-bottom: none;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.drop-down-education-fields-list p:hover {
+    color: var(--color-dark-blue);
+    background-color: var(--color-coral-red);
+}
+
 
 /* Desktop */
 
