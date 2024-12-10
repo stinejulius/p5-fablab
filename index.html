@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="pop-up.js" defer></script>
 </head>
 
 <body>
@@ -431,14 +432,13 @@
                                 <div class="kursus-box-desktop">
                                     <div class="kursus-innovation-idegenerering-desktop">
                                         <img class="kursus-box-image"
-                                            src="assets/images/desktop/kursus-3d-print-desktop.webp"
-                                            alt="3D printer">
+                                            src="assets/images/desktop/kursus-3d-print-desktop.webp" alt="3D printer">
                                     </div>
                                     <div class="kursus-box-desktop-text">
                                         <h4>3D-printer</h4>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="kurser-boxes-table-column">
                                 <div class="kursus-box-desktop">
@@ -464,14 +464,13 @@
                                 <div class="kursus-box-desktop">
                                     <div class="kursus-badges">
                                         <img class="kursus-box-image"
-                                            src="assets/images/desktop/kursus-badges-desktop.webp"
-                                            alt="badges">
+                                            src="assets/images/desktop/kursus-badges-desktop.webp" alt="badges">
                                     </div>
                                     <div class="kursus-box-desktop-text">
                                         <h4>Badges</h4>
                                     </div>
                                 </div>
-                                
+
                             </div>
 
                         </div>
@@ -518,7 +517,7 @@
             </div>
 
             <div id="kurser-boxes">
-                <div class="kursus-box">
+                <div class="kursus-box" id="innovation-og-idegenerering-box">
                     <img class="kursus-box-image" src="assets/images/mobile/kursus-innovation.webp"
                         alt="FabLab lokalet">
                     <div class="kursus-box-text">
@@ -526,7 +525,7 @@
                     </div>
                 </div>
 
-                <div class="kursus-box">
+                <div class="kursus-box" id="laserskærer-box">
                     <img class="kursus-box-image" src="assets/images/mobile/kursus-laserskærer.webp"
                         alt="FabLabs laserskærer">
                     <div class="kursus-box-text">
@@ -534,7 +533,7 @@
                     </div>
                 </div>
 
-                <div class="kursus-box">
+                <div class="kursus-box" id="3dprint-box">
                     <img class="kursus-box-image" src="assets/images/mobile/kursus-3d.webp"
                         alt="En af FabLabs mange 3D printere">
                     <div class="kursus-box-text">
@@ -559,16 +558,14 @@
                 </div>
 
                 <div class="kursus-box">
-                    <img class="kursus-box-image" src="assets/images/mobile/kursus-plakat.webp"
-                        alt="plakat printer">
+                    <img class="kursus-box-image" src="assets/images/mobile/kursus-plakat.webp" alt="plakat printer">
                     <div class="kursus-box-text">
                         <h4> Plakat </h4>
                     </div>
                 </div>
 
                 <div class="kursus-box">
-                    <img class="kursus-box-image" src="assets/images/mobile/kursus-badges-mobile.webp"
-                        alt="badges">
+                    <img class="kursus-box-image" src="assets/images/mobile/kursus-badges-mobile.webp" alt="badges">
                     <div class="kursus-box-text">
                         <h4> Badges </h4>
                     </div>
@@ -576,6 +573,68 @@
             </div>
         </section>
 
+        <!--Pop-up windows kurser-->
+        <div class="popup" id="popup">
+            <div class="popup-content" id="popup-content">
+                <h3 id="popup-title">Innovation og idégenerering</h3>
+                <p id="popup-text">Lær at skabe og udvikle dine nye idéer
+
+                    Har du brug for nogen at sparre med når det kommer til idégenerering? Eller mangler du lidt
+                    inspiration og vejledning omkring innovation?
+                    Med vores kursus i Innovation og idégenerering, får du en masse inspiration fra tidligere projekter
+                    og kyndig vejledning i nytænkning.</p>
+                <p class="bold" id="popup-dates">Se dato for kurser herunder</p>
+                <p id="popup-date-1">08/02 - Kl. 10:00-12:30</p>
+                <p id="popup-date-2">15/04 - Kl.13:30-15:30</p>
+            </div>
+            <div class="tilmeld-knap">
+                <a class="cta-button" href="">
+                    <h4>SE KURSER</h4>
+                </a>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup-content">
+                <h3>Laserskærer</h3>
+                <p>Lær at lave fede laserskårne projekter!
+
+                    Med vores laserkærer kan du skabe fede designs, alt sammen skåret med laser.
+                    På kurset lærer du at designe din fil i Adobe Illustrator, så laserskæreren kan forstå den. Du får
+                    kyndig vejledning
+                    i både programmet og i selve maskinen, så du fremover kan benytte maskinen på egen hånd.
+                    Indlæs dit design og se laseren udføre arbejdet.</p>
+                <p>Se dato for kurser herunder</p>
+                <p>10/12 - Kl. 9:00-11:30</p>
+                <p>17/12 - Kl.12:15-15:00</p>
+            </div>
+            <div class="tilmeld-knap">
+                <a class="cta-button" href="">
+                    <h4>SE KURSER</h4>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>3D-printer</h3>
+                <p>Har du en 3D-figur du gerne vil have skabt fysisk?
+
+                    På dette kursus lærer du 3D-printens kunst. Har du brug for at skabe din 3D figur i fysisk form?
+
+                    Vi guider dig hele vejen fra idé til færdigt produkt, og vil glæde os til at være med hele vejen.
+
+                    Se dato for kurser herunder
+                    04/01 - Kl. 12:15-15:00
+                    20/02 - Kl. 9:00-11:30</p>
+                <p>Se dato for kurser herunder</p>
+                <p>10/12 - Kl. 9:00-11:30</p>
+                <p>17/12 - Kl.12:15-15:00</p>
+            </div>
+            <div class="tilmeld-knap">
+                <a class="cta-button" href="">
+                    <h4>SE KURSER</h4>
+                </a>
+            </div>
+        </div>
         <!-- Ansatte -->
         <section id="ansatte">
             <div id="ansatte-inner">

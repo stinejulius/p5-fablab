@@ -223,6 +223,7 @@
     gap: 30px;
     width: 100%;
     align-items: center;
+    cursor: pointer;
 }
 
 .kursus-box {
@@ -257,6 +258,48 @@
     display: none;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-dark-blue);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    max-width: 600px;
+    cursor: pointer;
+
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    max-height: 90%;
+    gap: 20px;
+}
+
+
+.popup-text {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* =============== Section: ansatte =============== */
 
@@ -515,7 +558,7 @@
         display: flex;
         flex-direction: column;
         gap: 72px;
-        
+
     }
 
     .kurser-text-and-img-desktop {
@@ -570,7 +613,7 @@
         max-width: 500px;
     }
 
-    .kursus-box-image{
+    .kursus-box-image {
         width: 100%;
         max-width: 551px;
     }
