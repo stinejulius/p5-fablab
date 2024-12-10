@@ -1,18 +1,19 @@
 // Anker JS burger menu in mobile version //
 
 document.addEventListener('DOMContentLoaded', () => {
-    const burgerIcon = document.getElementById('mobile-menu');
-    const navMenu = document.getElementById('nav-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-    burgerIcon.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+    // Toggle menu shown by icon click
+    menuIcon.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
     });
 
-    // Close the menu after clicking a link
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    navLinks.forEach(link => {
+    // Close the menu when a link is clicked
+    const menuLinks = document.querySelectorAll('#mobile-menu li a');
+    menuLinks.forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
+            mobileMenu.classList.remove('active');
         });
     });
 });
