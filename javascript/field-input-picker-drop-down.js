@@ -64,7 +64,7 @@ function FoldOutEducationFieldNames() {
         fieldNameHTML.addEventListener("click", (event) => {
             event.stopPropagation(); //Don't give click event to other eventListeners
 
-            insertFieldName(fieldName)
+            InsertFieldName(fieldName)
         })
 
         // The p tags are inserted in the div, one after each other (appendChild = is inserted in the end efter the last one)
@@ -79,3 +79,24 @@ function FoldOutEducationFieldNames() {
 /**
  * FUNCTION | Function starts when user clicks on fieldNameHTML
  */
+function InsertFieldName(fieldName) {
+
+    // Find class "field-input-text-box" inside of inputOuterHTML, and store it in inputBoxHTML variable
+    const inputBoxHTML = inputOuterHTML.getElementsByClassName("field-input-text-box")[0];
+
+    // Find class "field-input-text-box-p" inside of inputBoxHTML, and store in inputTextHTML variable
+    const inputTextHTML = inputBoxHTML.getElementById("field-input-text-box-p")[0];
+
+    // Replace the inner HTML of the variable inputTextHTML with FieldName (p the user clicks on)
+    inputTextHTML.innerHTML = fieldName;
+
+    // Adds class to inputBoxHTML -> to style it in CSS
+    inputBoxHTML.classList.add("field-name-selected");
+
+    // Calls the function that removes the educationFieldsContainerHTML
+    CloseEducationFieldsContainer();
+}
+
+
+
+
