@@ -32,32 +32,32 @@ const kurser = [
 ];
 
 
-// Funktion til at vise pop-up
+// Funktion til at vise pop-up vinduet
 function showPopup(title, text, date1, date2) {
     popupTitle.textContent = title;
     popupText.textContent = text;
     popupDate1.textContent = date1;
     popupDate2.textContent = date2;
 
-    popup.style.display = "flex";  // Vis pop-up'en med flex
+    popup.style.display = "flex";
 }
 
-// Loop igennem kurserne og tilføj event listeners
+// Eventlistener tilføjet//
 kurser.forEach(function(kursus) {
     document.getElementById(kursus.id).addEventListener("click", function() {
         showPopup(kursus.title, kursus.text, kursus.date1, kursus.date2);
     });
 });
 
-// Klik event på pop-up'en for at lukke den (når man klikker på indholdet)
+// Klik på pop-up vindue for at lukke den igen
 popupContent.addEventListener("click", function (event) {
-    event.stopPropagation();  // Stopper eventet fra at blive videreført til pop-up baggrunden
-    popup.style.display = "none"; // Luk pop-up'en
+    event.stopPropagation();
+    popup.style.display = "none"; // Luk pop-up vinduet
 });
 
-// Luk pop-up'en ved klik udenfor (på baggrunden)
+// Luk pop-up'en ved klik
 window.onclick = function (event) {
-    if (event.target === popup) {  // Hvis man klikker på baggrunden (udenfor pop-up-indholdet)
+    if (event.target === popup) {  // Hvis man klikker på baggrunden (den blå del)
         popup.style.display = 'none';  // Skjul pop-up'en
     }
 };
