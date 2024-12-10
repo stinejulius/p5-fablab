@@ -253,6 +253,10 @@
     width: 250px;
 }
 
+#kurser-desktop {
+    display: none;
+}
+
 
 /* =============== Section: ansatte =============== */
 
@@ -488,35 +492,104 @@
 
 
     /* =============== Section: kurser =============== */
-
-
-    /* =============== Section: ansatte =============== */
-    #ansatte {
-        padding: 48px 24px;
+    #kurser {
+        display: none;
     }
 
-    #ansatte-inner {
+    #kurser-desktop {
+        display: flex;
+        padding: 48px 0px;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-coral-red);
+    }
+
+    .kurser-content-desktop {
+        display: flex;
+        flex-direction: column;
         gap: 48px;
-        max-width: 710px;
-        padding: 0;
+        padding: 0px 24px;
+    }
+
+    .kursus-content-inner-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        
+    }
+
+    .kurser-text-and-img-desktop {
+        display: flex;
+        justify-content: center;
+        gap: 98px;
+    }
+
+    .kurser-text-desktop {
+        display: flex;
+        width: 551px;
+        flex-direction: column;
+        gap: 76px;
+    }
+
+    .badge-text-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+
+    .kurser-img-desktop {
+        display: flex;
         width: 100%;
+        height: 100%;
+        max-width: 551px;
+
     }
 
-    #ansatte-kontaktpersoner {
-        gap: 0;
+    .kurser-boxes-desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 98px;
     }
 
-    .kontaktperson-box-row {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 48px;
+    .kurser-boxes-table {
+        display: flex;
+        gap: 98px;
     }
 
-    .kontaktperson-box {
-        max-width: 330px;
+    .kurser-boxes-table-column {
+        display: flex;
+        flex-direction: column;
+        gap: 98px;
+    }
+
+    .kursus-box-desktop {
+        position: relative;
         width: 100%;
+        max-width: 500px;
     }
 
+    .kursus-box-image{
+        width: 100%;
+        max-width: 551px;
+    }
+
+    .kursus-box-desktop-text {
+        background: #83D2FF;
+        display: inline-flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: var(--color-light-blue);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 300px;
+    }
 
     /* =============== Section: praktisk information =============== */
 }
