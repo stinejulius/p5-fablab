@@ -12,13 +12,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script defer src="mobile-menu.js"></script>
 </head>
 
 <body>
     <!-- Header -->
     <header id="header-mobile">
         <img class="header-icons" src="assets/illustrations/mobile/mini-fablab-logo.svg" alt="FabLab logo">
-        <img class="header-icons" src="assets/illustrations/mobile/menu-icon.svg" alt="Menu ikon">
+        <nav>
+            <img class="header-icons" src="assets/illustrations/mobile/menu-icon.svg" alt="Menu ikon">
+            <ul class="mobile-menu" id="mobile-menu">
+                <li><a href="#banner">Hjem</a></li>
+                <li><a href="#hvad-er-fablab">Hvad er FabLab?</a></li>
+                <li><a href="#fablab-for-dig">FabLab for dig</a></li>
+                <li><a href="#maskiner">Maskinerne</a></li>
+                <li><a href="#kurser">Kurser</a></li>
+                <li><a href="#ansatte">Hvem er vi?</a></li>
+                <li><a href="#praktisk-info">Praktisk information</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -34,7 +46,7 @@
         </section>
 
         <!-- Fablab introduktion -->
-        <section>
+        <section id="hvad-er-fablab">
             <div class="fablab-introduction">
                 <div class="hvad-er-fablab">
                     <h2>I FabLab kan du mere end du tror</h2>
@@ -59,6 +71,7 @@
                         </a>
                     </div>
                 </div>
+            <section id="fablab-for-dig">
                 <div class="fablab-for-dig">
                     <h2>FabLab for dig</h2>
                     <p>FabLab er for alle UCL's studerende, men det er ikke alle som er klar over hvad FabLab kan hjælpe
@@ -122,10 +135,12 @@
                                 <a class="cta-button-kontakt" href="">
                                     <h4>Kontakt os</h4>
                                 </a>
+                            
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
             </div>
         </section>
 
@@ -318,11 +333,10 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- Praktisk information -->
-        <section>
+        <section id="praktisk-info">
             <div class="praktisk-info">
                 <div id="praktisk-info-inner">
                     <h2>Praktisk information</h2>
