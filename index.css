@@ -104,12 +104,16 @@
 }
 
 .field-content {
-    display: flex;
+    display: none;
     padding: 16px;
     flex-direction: column;
     gap: 50px;
     border-radius: 0px 0px 5px 5px;
     background: #C7E9FC;
+}
+
+.field-content.active {
+    display: flex;
 }
 
 .business-intro {

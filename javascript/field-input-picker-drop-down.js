@@ -26,7 +26,6 @@ const educationFieldNames = [
  * EVENT LISTENER | Listens after a click on inputOuterHTML, calls function FoldOutEducationFieldNames (starts)
  */
 inputOuterHTML.addEventListener("click", () => {
-    
     FoldOutEducationFieldNames()
 })
 
@@ -94,6 +93,17 @@ function InsertFieldName(fieldName) {
     // Adds class to inputBoxHTML -> to style it in CSS
     inputBoxHTML.classList.add("field-name-selected");
 
+
+
+    // Remove "active" class from "field-content" elements
+    RemoveActiveFromAllFieldContent();
+
+    // Get fieldContentNumber and add "active" class to the correct "field-content" element.
+    const fieldContentNumber = getFieldContentNumberFromEducationFieldName(fieldName);
+    AddActiveToFieldContent(fieldContentNumber)
+
+
+
     // Calls the function that removes the educationFieldsContainerHTML
     CloseEducationFieldsContainer();
 }
@@ -108,7 +118,7 @@ function CloseEducationFieldsContainer() {
     const educationFieldsContainersHTML = document.getElementsByClassName("drop-down-education-fields-list")[0];
 
     // Calls the function
-    educationFieldsContainersHTML.remove();  
+    educationFieldsContainersHTML.remove();
 }
 
 
@@ -139,4 +149,52 @@ function OnDocumentClick(event) {
 
     // Calls the function that removes the EducationFieldsContainersHTML
     CloseEducationFieldsContainer();
+}
+
+
+/** 
+ * FUNCTION | Function removes 'active' class from all 'field-content' elements
+ */
+function RemoveActiveFromAllFieldContent() {
+
+    // Create variable that contains all "field-content" elements (array)
+    const fieldContentHTMLs = document.getElementsByClassName("field-content");
+
+    // Loop through all "field-content" elements
+    for (let i = 0; i < fieldContentHTMLs.length; i++) {
+        const fieldContentHTML = fieldContentHTMLs[i];
+
+        // Remove "active" class from "field-content" element
+        fieldContentHTML.classList.remove("active");
+    }
+}
+
+
+/** 
+ * FUNCTION | Function adds 'active' class to specific 'field-content' element
+ */
+function AddActiveToFieldContent(fieldContentNumber) {
+    const fieldContentHTML = document.getElementById("field-content-" + fieldContentNumber)
+
+    fieldContentHTML.classList.add("active");
+}
+
+
+/** 
+ * FUNCTION | Function converts a educationFieldName into a fieldContentNumber
+ */
+function getFieldContentNumberFromEducationFieldName(educationFieldName) {
+
+    // Loop through all educationFieldNames (array)
+    for (let i = 0; i < educationFieldNames.length; i++) {
+        const educationFieldNameFromArray = educationFieldNames[i];
+
+        // If the parameter: educationFieldName is the same as the educationFieldNameFromArray
+        if (educationFieldName === educationFieldNameFromArray) {
+            return i;
+        }
+    }
+
+    // If we go through all educationFieldNames without finding a match, then default to 0
+    return 0;
 }
