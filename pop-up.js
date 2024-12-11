@@ -51,7 +51,6 @@ kurser.forEach(function(kursus) {
 
 // Klik på pop-up vindue for at lukke den igen
 popupContent.addEventListener("click", function (event) {
-    event.stopPropagation();
     popup.style.display = "none"; // Luk pop-up vinduet
 });
 
