@@ -104,12 +104,16 @@
 }
 
 .field-content {
-    display: flex;
+    display: none;
     padding: 16px;
     flex-direction: column;
     gap: 50px;
     border-radius: 0px 0px 5px 5px;
     background: #C7E9FC;
+}
+
+.field-content.active {
+    display: flex;
 }
 
 .business-intro {
@@ -140,6 +144,42 @@
     display: flex;
     gap: 16px;
     justify-content: center;
+}
+
+/* Style for field-input-picker-drop-down.js */
+#field-box-outer {
+    position: relative;
+}
+
+.drop-down-education-fields-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+
+    box-sizing: border-box;
+    border-radius: 0px 0px 5px 5px;
+    border-right: 4px solid var(--color-coral-red);
+    border-bottom: 4px solid var(--color-coral-red);
+    border-left: 4px solid var(--color-coral-red);
+}
+
+.drop-down-education-fields-list p {
+    padding: 10px;
+    border-bottom: 2px solid var(--color-white);
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+.drop-down-education-fields-list p:last-child {
+    border-bottom: none;
+}
+
+.drop-down-education-fields-list p:hover {
+    color: var(--color-dark-blue);
+    background-color: var(--color-coral-red);
 }
 
 
@@ -361,7 +401,6 @@
 }
 
 /* =============== Section: praktisk information =============== */
-
 .praktisk-info {
     background-color: var(--color-dark-blue);
     display: flex;
@@ -379,6 +418,14 @@
 
 .praktisk-info-box {
     display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border-radius: 5px;
+    background: var(--color-green);
+}
+
+.praktisk-info-box-overskrift {
+    display: flex;
     height: 44px;
     padding: 10px 16px;
     justify-content: space-between;
@@ -387,6 +434,34 @@
     background: var(--color-green);
 }
 
+.praktisk-info-box-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-dark-blue);
+    padding: 14px;
+    display: none; /* Skjult */
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Viser indhold når det er åbent */
+.praktisk-info-box-content.open {
+    display: block; 
+}
+
+.pil {
+    width: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Roterer pilen når boksen er åben */
+.pil.rotated {
+    transform: rotate(180deg); 
+}
 
 /* ========================================================================================== */
 
@@ -454,6 +529,7 @@
         height: 450px;
         align-items: center;
         gap: 98px;
+        justify-content: space-between;
     }
 
     #hvad-er-fablab-inner-desktop-img {
