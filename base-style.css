@@ -184,6 +184,7 @@ p.small {
     width: 45px;
 }
 
+
 /* =============== Menu & website behavior =============== */
 .mobile-menu {
     display: none;
@@ -284,7 +285,6 @@ html {
 }
 
 
-
 /* =============== Footer | mobile =============== */
 
 #footer {
@@ -336,6 +336,7 @@ html {
         font-size: 18px;
     }
 
+
     /* =============== CTA button =============== */
     .cta-button {
         padding: 5px 24px;
@@ -345,6 +346,7 @@ html {
         padding: 5px 24px;
     }
 
+    
     /* =============== Header =============== */
     #header {
         justify-content: center;
