@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="base-style.css">
     <link rel="stylesheet" href="index.css">
     <script src="javascript/field-input-picker-drop-down.js" defer></script>
+    <script src="javascript/dropdown-info.js" defer></script>
+    <script src="javascript/mobile-menu.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-<script src="dropdown-info.js" defer></script>
 </head>
 
 <body>
@@ -21,7 +22,17 @@
     <header id="header">
         <div id="header-inner">
             <img class="header-icons" src="assets/illustrations/mobile/mini-fablab-logo.svg" alt="FabLab logo">
-            <img class="header-icons" src="assets/illustrations/mobile/menu-icon.svg" alt="Menu ikon">
+            <img id="menu-icon" class="header-icons" src="assets/illustrations/mobile/menu-icon.svg" alt="Menu ikon">
+            
+            <ul class="mobile-menu" id="mobile-menu">
+                <li><a href="#banner">Hjem</a></li>
+                <li><a href="#hvad-er-fablab">Hvad er FabLab?</a></li>
+                <li><a href="#fablab-for-dig">FabLab for dig</a></li>
+                <li><a href="#maskiner">Maskinerne</a></li>
+                <li><a href="#kurser">Kurser</a></li>
+                <li><a href="#ansatte">Hvem er vi?</a></li>
+                <li><a href="#praktisk-info">Praktisk information</a></li>
+            </ul>
         </div>
     </header>
 
@@ -727,7 +738,7 @@
         </section>
 
         <!-- Praktisk information -->
-        <section>
+        <section id="praktisk-info">
             <div class="praktisk-info">
                 <div id="praktisk-info-inner">
                     <h2>Praktisk information</h2>
